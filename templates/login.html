@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% block content %}
+<div class="d-flex flex-column">
+  <h1 class="text-center">Login</h1>
+  <form
+    class="m-auto col-lg-5 col-md-7 col-sm-9 col-11"
+    method="POST"
+    action="/login"
+  >
+    <div class="mb-3">
+      <label for="email" class="form-label">Username</label>
+      <input
+        type="email"
+        class="form-control"
+        required
+        id="email"
+        name="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        required
+        id="password"
+        name="password"
+      />
+    </div>
+    <div class="mb-3 form-check">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="exampleCheck1"
+        required
+      />
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <div class="mb-3">
+      <input
+      type="text"
+      class="form-control"
+      id="honeypotfield"
+      name="honeypot"
+      style="display: none;"
+      />
+    </div>
+    <div class="mb-3 text-center">
+      Dont have an account. <a href="/register">Sign Up</a>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Submit</button>
+  </form>
+</div>
+{% endblock %}

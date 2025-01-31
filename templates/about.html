@@ -1,0 +1,117 @@
+{% extends "base.html" %} {% block content %}
+<div class="container mt-5">
+  <!-- Introduction Section -->
+  <section class="text-center mb-5">
+    <h1 class="display-4">About Honeypot Application</h1>
+    <p class="lead text-muted">
+      Understand what a honeypot is, how it functions, and why it's essential
+      for security.
+    </p>
+  </section>
+
+  <!-- What is a Honeypot -->
+  <section class="row align-items-center mb-5">
+    <div class="col-md-6">
+      <!-- Make the image responsive and ensure it occupies full width -->
+      <img
+        src="/img/honeypot_about.jpeg"
+        class="img-fluid rounded shadow w-100"
+        alt="Honeypot Illustration"
+      />
+    </div>
+    <div class="col-md-6">
+      <h2>What is a Honeypot?</h2>
+      <p class="text-muted">
+        A honeypot is a security mechanism that creates a decoy system to
+        attract cyber attackers. It simulates a real system with potential
+        vulnerabilities, luring attackers to interact with it. This helps in
+        studying the attack patterns and understanding the methodologies used by
+        malicious actors.
+      </p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          Decoy system designed to lure attackers.
+        </li>
+        <li class="list-group-item">Collects data on intrusion attempts.</li>
+        <li class="list-group-item">Helps improve overall security posture.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How Honeypot Works (Timeline) -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4">How Does the Honeypot Work?</h2>
+    <div class="position-relative">
+      <!-- Timeline -->
+      <ul class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-content bg-light rounded p-4">
+            <h5>Step 1: Setup</h5>
+            <p>
+              A honeypot is deployed within the network, appearing as a
+              vulnerable target to attackers.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-content bg-light rounded p-4">
+            <h5>Step 2: Lure and Capture</h5>
+            <p>
+              The honeypot attracts attackers by mimicking a real system,
+              capturing their actions in real-time.
+            </p>
+          </div>
+        </li>
+        <li class="timeline-item">
+          <div class="timeline-content bg-light rounded p-4">
+            <h5>Step 3: Analyze</h5>
+            <p>
+              Security teams analyze the captured data to understand the
+              attackers' techniques and improve defenses.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="mb-5">
+    <h2 class="text-center mb-4">Benefits of Using a Honeypot</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="p-4 bg-light rounded shadow-sm">
+          <h5 class="mb-3">Proactive Threat Detection</h5>
+          <p>
+            Honeypots allow you to detect threats before they can cause real
+            harm to your network by identifying attack methods early.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-light rounded shadow-sm">
+          <h5 class="mb-3">Detailed Attack Analysis</h5>
+          <p>
+            Gain insights into attackers' behavior, tools, and techniques,
+            enabling you to strengthen your security measures effectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Representation -->
+  <section class="text-center mb-5">
+    <h2 class="mb-4">Visual Representation</h2>
+    <img
+      src="/img/honeypot-mechanism.webp"
+      class="img-fluid rounded shadow"
+      alt="Honeypot Visual Diagram"
+    />
+    <p class="mt-3 text-muted">
+      Diagram showing how the honeypot integrates within a network to detect and
+      analyze threats.
+    </p>
+  </section>
+</div>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Attackers Data</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">IP Address</th>
+                    <th scope="col">User Agent</th>
+                    <th scope="col">Timestamp</th>
+                    <th scope="col">Path</th>
+                    <th scope="col">Referrer</th>
+                    <th scope="col">Method</th>
+                    <th scope="col">Query String</th>
+                    <th scope="col">Headers</th>
+                    <th scope="col">Form Data</th>
+                    <th scope="col">Body</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for attacker in attackers %}
+                <tr>
+                    <td>{{ attacker['id'] }}</td>
+                    <td>{{ attacker['ip_address'] }}</td>
+                    <td>{{ attacker['user_agent'] }}</td>
+                    <td>{{ attacker['timestamp'] }}</td>
+                    <td>{{ attacker['path'] }}</td>
+                    <td>{{ attacker['referrer'] }}</td>
+                    <td>{{ attacker['method'] }}</td>
+                    <td>{{ attacker['query_string'] }}</td>
+                    <td>
+                        <pre>{{ attacker['headers'] }}</pre>
+                    </td>
+                    <td>
+                        <pre>{{ attacker['form_data'] }}</pre>
+                    </td>
+                    <td>
+                        <pre>{{ attacker['body'] }}</pre>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="11" class="text-center">No data available</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,78 @@
+#honeypotbutton {
+    position: fixed !important;
+    bottom: 10px !important;
+    right: 10px !important;
+}
+
+.timeline {
+    list-style: none;
+    position: relative;
+    padding: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background: #dee2e6;
+}
+
+.timeline-content {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 50px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 50px;
+}
+
+#alert-containers {
+    width: 70%;
+    position: fixed;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 9999; /* Ensure it's above other elements */
+  }
+
+@media screen and (max-width: 600px) {
+
+    #alert-containers {
+        width: 90%;
+    }
+
+    .timeline-item::before {
+        left: 10px;
+    }
+
+    .timeline-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+        margin-left: 20px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+        margin-right: 20px;
+    }
+}
+
+
+
