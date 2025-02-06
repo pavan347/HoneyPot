@@ -1,6 +1,6 @@
 # HoneyPot Project
 ## Introduction
-This project is a honeypot designed to detect and analyze unauthorized access attempts. It aims to improve security by attracting potential attackers and studying their behavior.
+The HoneyPot Project is a web application designed to demonstrate how the concept of a honeypot works in cybersecurity. By simulating a vulnerable system, it attracts potential attackers and logs unauthorized access attempts. This project provides valuable insights into attack patterns and techniques, helping security professionals to study attacker behavior and develop better defense mechanisms.
 
 ## Features
 - Attracts potential attackers
