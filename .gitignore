@@ -8,6 +8,7 @@ __pycache__/
 
 # Database
 users.db
+SETUP.md
 
 # Distribution / packaging
 .Python

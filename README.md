@@ -6,43 +6,8 @@ This project is a honeypot designed to detect and analyze unauthorized access at
 - Attracts potential attackers
 - Logs unauthorized access attempts
 
-## Installation
-1. Clone the repository:
-    ```cmd
-    git clone https://github.com/pavan347/HoneyPot.git
-    ```
-2. Navigate to the project directory:
-    ```cmd
-    cd HoneyPot
-    ```
-3. Create a virtual environment:
-    ```cmd
-    python -m venv env
-    ```
-4. Activate the virtual environment:
-    ```cmd
-    .\env\Scripts\activate
-    ```
-5. Install the required dependencies:
-    ```cmd
-    pip install -r requirements.txt
-    ```
-
-## Usage
-1. Start the honeypot:
-    ```cmd
-    python app.py
-    ```
-2. Monitor the logs for unauthorized access attempts:
-    ```cmd
-    Navigate to "/show_attackers_data"
-    ```
-
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request.
-
-## Contact
-For any questions or suggestions, please open an issue or contact the project maintainer at pavankumargarapati04@gmail.com.
 
 ## Project Images
 
@@ -70,3 +35,6 @@ For any questions or suggestions, please open an issue or contact the project ma
 
 ### Show Attackers Data Page
 ![Show Attackers Data Page](./static/img/project_images/9showattackersdatapage.png)
+
+## Contact
+For any questions or suggestions or to get this project, please open an issue or contact the project maintainer at pavankumargarapati04@gmail.com.
