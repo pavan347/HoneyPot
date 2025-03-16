@@ -10,6 +10,13 @@ __pycache__/
 users.db
 SETUP.md
 
+# Project Files
+static
+templates
+app.py
+config.py
+
+
 # Distribution / packaging
 .Python
 env/
