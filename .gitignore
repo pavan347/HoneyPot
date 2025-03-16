@@ -11,8 +11,9 @@ users.db
 SETUP.md
 
 # Project Files
-static
+modules
 templates
+static
 app.py
 config.py
 
